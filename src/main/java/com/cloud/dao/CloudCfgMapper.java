@@ -1,7 +1,9 @@
 package com.cloud.dao;
 
-import com.cloud.models.CloudCfg;
+import org.apache.ibatis.annotations.Mapper;
 
+import com.cloud.models.CloudCfg;
+@Mapper
 public interface CloudCfgMapper {
     int deleteByPrimaryKey(Long id);
 

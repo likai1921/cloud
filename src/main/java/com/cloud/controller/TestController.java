@@ -31,17 +31,4 @@ public class TestController {
 		return "hello!";
 	}
 	
-	@RequestMapping("/test1")
-	@ResponseBody	
-	public String sayHello1(HttpServletResponse response,HttpServletRequest request) {
-		
-		
-		  CloudCfg cfg=new CloudCfg(); cfg.setName("测试"); cfg.setValue("123");
-		  cloudCfgMapper.insert(cfg);
-		 
-		
-		return "hello1!";
-	}
-	//新增业务模块 test
-	//git add
 }
